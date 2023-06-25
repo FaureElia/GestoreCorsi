@@ -87,6 +87,7 @@ public class FXMLController {
     	}catch(NumberFormatException e) {
     		this.txtRisultato.setText("inserire un numero intero");
     		e.printStackTrace();
+    		return;
     	}
     	if (inputNumber<1 || inputNumber>2) {
     		txtRisultato.setText("inserire 1 o 2");

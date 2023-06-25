@@ -10,19 +10,13 @@ public class Model {
 	private CorsoDAO corsoDAO;
 	private StudenteDAO studenteDAO;
 	
-	
-	
-	
-	
-	
-	
 	public Model() {
 		this.corsoDAO = new CorsoDAO();
 		this.studenteDAO=new StudenteDAO();
 	}
 
 
-	public List <Corso >getCorsiByPeriodo(int periodo) {
+	public List <Corso> getCorsiByPeriodo(int periodo) {
 		return this.corsoDAO.getCorsiByPeriodo(periodo);
 	}
 	
